@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>HW12 - HW6 Dashboard</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TopNav -->
+    <div class="pageWrapper">
+      <nav class="navWrapper">
+        <div class="navLeft logo">Lattitude</div>
+        <div class="navRight">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="vsmaxtemp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="vsmaxhumidity.html">Humidity</a>
+                                <a class="dropdown-item" href="vscloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="vswindspeed.html">Wind Speed</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+        
+            </ul>
+        </div>
+        </nav>
+
+       <!-- Content -->
+       <div class="container">
+            <div class="rowWrapper row">
+                <div class="lattitudeContent col-md-8">
+                    <section>
+                        <h1 class="title">Max Humidity</h1>
+                        <img class="vizpages" src="./images/citylatvshumidity.png"/>
+                        <div>
+                            <p>
+                                From the city latitude vs max temperature analysis,one of the evident trends is that near latitude 0 (the equator), cities have a higher temperature.
+                                Accordingly, humidity percentage is highest in between -20 and 0 degrees latitude.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="visualizationContent col-md-4">
+                    <section>
+                        <h4 class="title">Visualizations</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="vsmaxtemp.html"><img class="vizbarimages" src="./images/landing-big.png"/></a>
+                            </div>
+                            <div class="col-md-6">
+                                    <a href="vsmaxhumidity.html"><img class="vizbarimages" src="./images/citylatvshumidity.png"/></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <a href="vscloudiness.html"><img class="vizbarimages" src="./images/citylatvscloudiness.png"/></a>
+                            </div>
+                            <div class="col-md-6">
+                                    <a href="vswindspeed.html"><img class="vizbarimages" src="./images/citylatvswindspeed.png"/></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

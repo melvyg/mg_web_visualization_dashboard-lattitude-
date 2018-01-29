@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>HW12 - HW6 Dashboard</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TopNav -->
+    <div class="pageWrapper">
+      <nav class="navWrapper">
+        <div class="navLeft logo">Lattitude</div>
+        <div class="navRight">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="vsmaxtemp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="vsmaxhumidity.html">Humidity</a>
+                                <a class="dropdown-item" href="vscloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="vswindspeed.html">Wind Speed</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+        
+            </ul>
+        </div>
+        </nav>
+        
+        <!-- Content -->
+        <div class="container">
+            <div class="comparisonContent col-md-12">
+            <h1 class="title"> Comparison: Lattitude vs X</h1>
+            <h3 class="subtitle">Click on any plot to get an in-depth analysis</h3>
+            <div class="rowWrapper row">
+                <section>
+                    <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="viztitle"> vs. Max Temperature</h4>
+                                <img class="vizbarimages" src="./images/citylatvsmaxtemp.png"/>
+                            </div>
+                            <div class="col-md-6">
+                                    <h4 class="viztitle"> vs. Max Humidity</h4>
+                                <img class="vizbarimages" src="./images/citylatvshumidity.png"/>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-6">
+                                    <h4 class="viztitle"> vs. Cloudiness</h4>
+                                <img class="vizbarimages" src="./images/citylatvscloudiness.png"/>
+                            </div>
+                            <div class="col-md-6">
+                                    <h4 class="viztitle"> vs. Wind Speed</h4>
+                                <img class="vizbarimages" src="./images/citylatvswindspeed.png"/>
+                            </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
